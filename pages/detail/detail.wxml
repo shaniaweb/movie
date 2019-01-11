@@ -1,0 +1,81 @@
+<scroll-view scroll-y>
+  <!-- 电影基本信息 -->
+  <view class="page">
+    <view style='float:right;margin-top:20rpx;margin-right:20rpx;'>
+      <image src="../../img/collection.png" style='width:60rpx;height:60rpx;' bindtap='collection' />
+    </view>
+    <view class='first'>
+      <image src='{{moviesdetail.img}}' />
+      <view class='first_st'>
+        <view class='item'>
+          <view class='item-info'>
+            <text style='font-size:40rpx;font-weight:bold'>{{moviesdetail.name}}</text>
+            <text class='f1'>{{moviesdetail.overallRating}} </text>
+          </view>
+        </view>
+        <view>
+          <text class='f2'>{{moviesdetail.text}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 预告片 -->
+  <view class='item' bindtap='turn' id="{{moviesdetail.id}}">
+    <view class='item-ad1'>
+      <image src='/img/advance.png ' style='width:60rpx;height:60rpx;margin-right:2%'></image>
+      <text class='f2'>预告片</text>
+      <image src='/img/arrowright.png ' style='width:35rpx;height:35rpx;margin-left:70%'></image>
+    </view>
+  </view>
+  <!-- 电影简介 -->
+  <view class='item-ad2'>
+    <text class='f2'>{{moviesdetail.summary}}</text>
+  </view>
+  <!-- 演员列表 -->
+<view class="scroll_box"> 
+ <text style='f2'>演员</text>
+ <text class='f3'>（排序不分主次)</text>
+    <scroll-view scroll-x  style="width: auto;overflow:hidden;">
+    <view class="item_list" wx:for="{{allActors}}" wx:key="{{item.id}}">
+    <!-- 演员图片、名字对齐 -->
+    <!-- <view wx:if="{{item.pictures}}" class="list-dImg">
+<image bindtap="imgYu" data-list="{{item.pictures}}" data-src="{{dImg}}" wx:for="{{item.pictures}}" wx:for-item="dImg" src="{{dImg}}"></image>
+</view> -->
+    <view class='item_list2'>
+      <image src='{{item.avatars.medium}}' bindtap='actorsPic'  data-index='{{index}}' data-list="{{allActors}}" data-src="{{item.avatars.medium}}"  ></image>
+      <text> {{item.name}}</text>
+    </view>
+</view>
+    </scroll-view>
+  </view>
+
+<!-- 购买 -->
+<view>
+ <v-buy bindtap='pay'></v-buy>
+</view>
+<!-- 评论区 -->
+<view class='comment'>
+<text class='f2'>热门评论</text>
+<view  wx:for="{{comments}}" wx:key="" >
+<!-- 发表用户 -->
+<view>
+<image src='{{item.author.avatar}}' style='width:60rpx;height:60rpx;'>头像</image>
+    <text  class='f3'>{{item.author.name}}__{{item.title}}</text>
+    <!-- <text class='f4'>{{item.summary}}</text> -->
+</view>
+<!-- 发表内容 -->
+   <view class='comment-info'>
+   <text  class='f2'>{{item.summary}}</text>
+   </view>
+</view>
+</view>
+</scroll-view>
+<!-- 隐藏演员弹框 -->
+<view class='mask' hidden='{{isHidden}}'>
+    <view class='actor_box'>
+      <image mode='widthFix' src="{{actor_detali.avatars.medium}}"></image>
+      <text>{{actor_detali.name}}</text>
+      <text>{{actor_detali.name_en}}</text>
+    </view>
+    <image  src="/img/close.png" bindtap='closeFnc'></image>
+</view>

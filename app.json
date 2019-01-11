@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/movies/index",
+    "pages/cinema/index",
+    "pages/me/index",
+    "pages/detail/detail",
+    "pages/cinema/city/city"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "极致",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#148af4"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "borderStyle": "balck",
+    "backgroundColor": "#fbf9fe",
+    "list": [
+      {
+        "pagePath": "pages/movies/index",
+        "iconPath": "img/movies.png",
+        "selectedIconPath": "img/movies_lh.png",
+        "text": "电影"
+      },
+      {
+        "pagePath": "pages/cinema/index",
+        "iconPath": "img/cinema.png",
+        "selectedIconPath": "img/cinema_lh.png",
+        "text": "影院"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "iconPath": "img/me.png",
+        "selectedIconPath": "img/me_lh.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

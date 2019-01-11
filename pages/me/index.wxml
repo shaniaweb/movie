@@ -1,0 +1,25 @@
+ <view class="container" >
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> 
+    <block wx:else>
+    <view class='userinfo'>
+       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view> 
+    <!-- 电影标签 -->
+    <view class='item'>
+      <view class='item-ad1'>
+          <image src='/img/collection_lh.png' style='width:60rpx;height:60rpx;margin-right:3%'></image>
+          <text class=''>电影标签</text>
+          <image src='/img/arrowright.png ' style='width:35rpx;height:35rpx;margin-left:55%'></image>
+      </view>
+    </view>
+    <!-- 分享给好友 -->
+     <view class='item'>
+      <view class='item-ad1'>
+          <image src='/img/share.png ' style='width:60rpx;height:60rpx;margin-right:3%'></image>
+          <text class=''>分享给好友</text>
+          <image src='/img/arrowright.png ' style='width:35rpx;height:35rpx;margin-left:50%'></image>
+      </view>
+    </view>
+   </block> 
+   </view>

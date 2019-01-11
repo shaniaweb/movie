@@ -1,0 +1,26 @@
+<view class='content'>
+    <view class='search'>
+    <!-- 城市选择 -->
+    <view  bindtap='city_turn' class='city'>
+    {{city}}
+    </view>
+    <!-- 查询 -->
+     <image src='/img/position.png ' bindtap='relocation'></image>
+     <input class='input' bindinput='bindKeyInput' placeholder="搜索周边电影院" value="{{inputName}}" />
+     <image src='/img/search.png ' bindtap='search'></image>
+    </view>
+    <!-- 提示 -->
+    <view class='tips'>
+    <text class='f1_1'>已经为你加载影院</text>
+    <text class='f2_2'>搜索全城?</text>
+    </view>
+    <!-- 影院列表 -->
+    <block wx:for="{{cinema}}" wx:key="">
+    <view class='cinema'>
+    <text class='cinema_title'>{{item.title}}</text>
+    <image src='../../img/hot.png'></image>
+    <text class='cinema_address'>{{item.address}}</text>
+    <text class='cinema_tel'>{{item.tel}}</text>    
+    </view>
+    </block>  
+</view>

@@ -1,0 +1,62 @@
+.content{
+ justify-content: center;
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+}
+.city{
+font: normal;
+font-size: 36rpx;
+}
+.search image{
+  height: 60rpx;
+  width: 60rpx;
+}
+input{
+  text-align: center;
+  font-size: 36rpx;
+  border-radius: 30rpx;
+  border:1rpx solid rgb(196, 193, 193);
+  padding: 10rpx 0 10rpx 0;
+}
+.tips{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 字体 */
+.f1_1{
+font-size:32rpx;
+color: rgb(177, 173, 173);
+}
+.f2_2{
+ font-size:32rpx;
+ color: #148af4; 
+}
+/* 输出影院样式 */
+.cinema{
+font: normal;
+font-size: 35rpx;
+width: 100%;
+padding: 10rpx 10rpx 0 10rpx;
+background-color:#fff;
+border-bottom:3rpx solid #f8f8f8;
+}
+.cinema image{
+width: 50rpx;
+height: 50rpx;
+}
+.cinema_address{
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.cinema_tel{
+  font-size: 29rpx;
+}

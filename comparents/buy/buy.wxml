@@ -1,0 +1,4 @@
+<!-- 购买 -->
+<view>
+<button class='button' bindtap='pay'>去买票</button>
+</view>

@@ -1,0 +1,140 @@
+.page{
+  background-color: rgba(224, 228, 224, 0.753);
+}
+.first{
+  display: flex;
+  flex-direction: row;
+}
+.first  image{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  width: 300rpx;
+  height: 400rpx;
+}
+.first_st{
+  padding-top: 50rpx;
+}
+.item {
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  overflow: hidden;
+  border-radius: 4rpx;
+  cursor: pointer;
+}
+.item-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.item-ad1{
+display: flex;
+flex-direction: row;
+justify-content:center;
+align-items: center;
+margin: 10rpx;
+}
+.item-ad2{
+  margin: 20rpx;
+}
+.item-ad2 text{
+  white-space: emsp
+}
+/* 演员列表样式 */
+.scroll_box{
+width: 100%;
+overflow: hidden;
+padding: 20rpx;
+background: #fff;
+white-space: nowrap;
+}
+.item_list{
+width: 200rpx;
+height: auto;
+margin-right: 23rpx;
+display: inline-block;
+align-items: center
+}
+.item_list2{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.item_list2 image{
+  margin:10rpx;
+  padding: 10rpx;
+  width: 200rpx;
+  height: 300rpx;
+}
+.item_list2 text{
+  padding-top: 10rpx;
+  font-size: 27rpx;
+}
+
+/* 热门评论样式 */
+.comment{
+  padding: 20rpx;
+}
+.comment-info{
+ margin: 10rpx  70rpx 10rpx 70rpx;
+}
+.comment image{
+margin: 10rpx;
+ border-radius: 20rpx;
+}
+/* 字体 */
+.f1{
+  font-size: 50rpx;
+  color: orange;
+  font-weight: bold;
+  margin-left: 60rpx;
+}
+.f2{
+font-size: 27rpx;
+line-height: 70rpx;
+} 
+.f3{
+  font-size: 27rpx;
+  color: rgb(83, 80, 80);
+}
+.f4{
+  padding-top:50rpx;
+  float: right;
+  font-size: 27rpx;
+  color: rgb(83, 80, 80);
+
+}
+/* 弹框样式 */
+.mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.actor_box{
+  width: 60%;
+  height: 600rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  margin-top: 200rpx;
+   display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden
+}
+.actor_box >image{
+  width: 100%;
+
+}
+.mask > image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+}

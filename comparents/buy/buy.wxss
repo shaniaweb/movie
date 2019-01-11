@@ -1,0 +1,10 @@
+/* 购票button */
+.button{
+  height:80rpx;
+  background-color: #148af4;
+  color: white;
+  font: normal;
+  font-size: 35rpx;
+  text-align: center;
+  border-radius: 25rpx;
+}

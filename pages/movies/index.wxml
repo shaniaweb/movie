@@ -1,0 +1,6 @@
+<view class='container'>
+<v-tab bind:getMovies ='getMoviesFunc'></v-tab>
+<view class='movie_container'>
+    <v-movie class='item' bind:getDetail = 'goToDetail'  wx:for="{{moviesArr}}" wx:key="" movie_data="{{item}}"></v-movie>
+</view>
+</view>

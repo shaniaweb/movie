@@ -1,0 +1,9 @@
+<block wx:for="{{tvArr}}" wx:key="">
+    <v-advance tv="{{item}}"/>
+</block>
+<block wx:for="{{_tvArr}}" wx:key="">
+<view class='content'>
+    <video src='{{item.resource_url}}' poster="{{item.medium}}">终极预告</video>
+    <text>{{item.title}}</text>
+    </view>
+</block>

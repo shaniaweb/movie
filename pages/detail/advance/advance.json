@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "预告片",
+  "usingComponents": {
+    "v-advance": "/comparents/v-advance/v-advance"
+  }
+}

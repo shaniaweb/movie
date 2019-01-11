@@ -1,0 +1,4 @@
+<view class='content' id="1"> 
+<video src="{{tv.resource_url}}"  poster="{{tv.medium}}"></video>
+<text>{{tv.title}}</text>
+</view>

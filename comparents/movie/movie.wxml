@@ -1,0 +1,8 @@
+<view class="container" bindtap='detail' id='{{movie_data.id}}'>
+  <image  class='movie_img' src='{{movie_data.image}}' />
+  <text class='title'>{{movie_data.title}}</text>
+  <text class='actors'>{{movie_data.actor3}}</text>
+</view>
+
+
+    

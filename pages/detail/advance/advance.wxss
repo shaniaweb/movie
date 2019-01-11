@@ -1,0 +1,15 @@
+.content{
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+background-color: rgba(224, 228, 224, 0.753);
+}
+.content text{
+  font: normal;
+  font-size:32rpx;
+  padding: 20rpx;
+}
+.content video{
+  width: 100%;
+}

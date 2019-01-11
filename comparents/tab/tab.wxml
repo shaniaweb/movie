@@ -1,0 +1,4 @@
+<view class="container">
+<text class="{{active ? 'active' : ''}}" bindtap='onBeing'> 正在热映</text>
+<text class="{{active ? '' : 'active'}}" bindtap='onSoon'> 即将上映</text>
+</view>
