@@ -1,10 +1,15 @@
 .container {
   height: 100%;
   padding: 70rpx 0;
+  /* background-color: #3443 */
 } 
 .container button{
-  width: 350rpx;
-  margin-top: 50%;
+  width: 200rpx;
+  margin-top: 30%;
+  border-color:  #FF4040;
+  border-radius: 50rpx;
+  font-size: 35rpx;
+  font: bold;
 }
 .userinfo {
   display: flex;
@@ -41,4 +46,7 @@ margin: 10rpx;
 .item-ad1 text{
   font-size: 35rpx;
   font-weight:normal;
+}
+.share{
+width: 100%;
 }

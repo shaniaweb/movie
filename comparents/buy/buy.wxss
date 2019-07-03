@@ -1,7 +1,7 @@
 /* 购票button */
 .button{
   height:80rpx;
-  background-color: #148af4;
+  background-color: #CD0000;
   color: white;
   font: normal;
   font-size: 35rpx;

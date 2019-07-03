@@ -8,7 +8,14 @@ Page({
     moviesdetail: {},
     allActors: [],
     comments: [],
-    isHidden:true
+    isHidden:true,
+    // 收藏变量初始化
+    movie: [],
+    movieList: [],
+    id: '',
+    isClick: false,
+    movieStorage: [],
+    movieId: ''
   },
   
   /**
@@ -25,14 +32,17 @@ Page({
     // this.reviewsDetail();
   
   },
+  onShow:function(){
+    // this.movieDetail();
+  },
   onReady: function() {
 
   },
+  // url: 'https://ticket-api-m.mtime.cn/movie/detail.api?locationId=290&movieId=' + movieId,
   movieDetail: function() {
     var page = this;
     var movieId = this.data.id
     wx.request({
-      // url: 'https://ticket-api-m.mtime.cn/movie/detail.api?locationId=290&movieId=' + movieId,
       url: 'http://api.douban.com/v2/movie/subject/' + movieId+'?apikey=0b2bdeda43b5688921839c8ecb20399b',
       header: {
         "Content-Type": "json"
@@ -140,8 +150,29 @@ Page({
     })
   },
   // 收藏
-  collection: function () {
+  collection: function (e) {
     console.log("collection");
+    console.log(this.data)
+    if (!this.data.isClick == true) {
+      let movieData = this.data.movieStorage;
+      movieData.push({
+        movieid: movieData.length,
+        id: this.data.id
+      })
+      wx.setStorageSync('movieData', movieData);//设置缓存
+      wx.showToast({
+        title: '已收藏',
+      });
+    } else {
+      wx.showToast({
+        title: '已取消收藏',
+      });
+    }
+    this.setData({
+      isClick: !this.data.isClick
+    
+})
+      
   },
   // 演员预览
   actorsPic: function (event) {
@@ -192,14 +223,26 @@ Page({
   },
   // 买票
   pay: function () {
-    wx.requestPayment({
-      timeStamp: '',
-      nonceStr: '',
-      package: '',
-      signType: 'HMAC-SHA256',
-      paySign: '',
-      success(res) { },
-      fail(res) { }
+    wx.showModal({
+      title: '提示',
+      content: '该功能还未被开发',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else {
+          console.log('用户点击取消')
+        }
+
+      }
     })
+    // wx.requestPayment({
+    //   timeStamp: '',
+    //   nonceStr: '',
+    //   package: '',
+    //   signType: 'HMAC-SHA256',
+    //   paySign: '',
+    //   success(res) { },
+    //   fail(res) { }
+    // })
   },
 })

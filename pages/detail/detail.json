@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "极致电影》电影详情",
+    "navigationBarTitleText": "电影详情",
     "usingComponents": {
       "v-buy": "/comparents/buy/buy"
     }

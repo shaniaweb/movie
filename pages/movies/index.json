@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "极致电影",
+    "navigationBarTitleText": "知我电影",
     "usingComponents": {
       "v-tab": "/comparents/tab/tab",
       "v-movie": "/comparents/movie/movie"

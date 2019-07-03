@@ -1,0 +1,6 @@
+<!-- <view class='conter' wx:for="{{item.movie}}" wx:key=""> -->
+<view class='conter'>
+<image src="/img/noIcon.png"></image>
+<text class='con_font1'>你还没有收藏哦~</text>
+</view>
+<!-- </view> -->

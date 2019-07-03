@@ -1,12 +1,14 @@
+@import "/pages/detail/detail.wxss";
 .content{
  justify-content: center;
 }
 .search{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-left: 20rpx;
-  padding-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20rpx;
+    padding-top: 20rpx;
 }
 .city{
 font: normal;
@@ -22,6 +24,7 @@ input{
   border-radius: 30rpx;
   border:1rpx solid rgb(196, 193, 193);
   padding: 10rpx 0 10rpx 0;
+  /* width: auto; */
 }
 .tips{
     display: flex;
@@ -37,7 +40,7 @@ color: rgb(177, 173, 173);
 }
 .f2_2{
  font-size:32rpx;
- color: #148af4; 
+ color: #FF4040; 
 }
 /* 输出影院样式 */
 .cinema{

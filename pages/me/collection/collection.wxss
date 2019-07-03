@@ -1,0 +1,11 @@
+.conter{
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.con_font1{
+  font: italic;
+  color: rgb(192, 189, 189);
+  font-size: 35rpx;
+}
